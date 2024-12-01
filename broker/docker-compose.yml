@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  pact-broker:
+    image: pactfoundation/pact-broker:latest
+    container_name: pact-broker
+    ports:
+      - "9292:9292"
+    environment:
+      PACT_BROKER_DATABASE_ADAPTER: sqlite
+      PACT_BROKER_LOG_LEVEL: debug
+    volumes:
+      - pact_data:/var/pact_broker/db
+    restart: unless-stopped
+
+volumes:
+  pact_data:
