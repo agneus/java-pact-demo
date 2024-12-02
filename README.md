@@ -1,4 +1,4 @@
-# Hatsune Miku REST Service
+# REST Contract Testing Demo
 
 ## Overview
 
@@ -65,7 +65,7 @@ The provider is a RESTful service implemented with **Spring Boot**. It fulfills 
 
 ## How it Works
 
-1. **The Consumer** defines requests for `/miku-message` and `/miku-phone-number`:
+1. **The Consumer** defines requests for `/miku-message` and `/miku-message/phone-number`:
    - Pact generates a contract capturing these interactions.
    
 2. **The Provider** tests itself against this contract:
