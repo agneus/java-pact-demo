@@ -40,6 +40,7 @@ public class ConsumerContractTest {
         // Call the ConsumerService and validate the response
         String response = consumerService.getMikuMessage();
         assertEquals("Hatsune Miku says hello!", response);
+        
     }
 
     /*
