@@ -23,7 +23,7 @@ The consumer simulates an application that interacts with the REST service. It g
     ```
 
 - **`getMikuPhoneNumber()`**:
-  - Sends a `GET` request to `/miku-phone-number`.
+  - Sends a `GET` request to `/miku-message/phone-number`.
   - Expects a response:
     ```json
     {
